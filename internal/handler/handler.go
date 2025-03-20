@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/timurkash/queue2/internal/biz"
+	"github.com/timurkash/go-test-task/internal/biz"
 )
 
 type Handler struct {

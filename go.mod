@@ -1,4 +1,4 @@
-module github.com/timurkash/queue2
+module github.com/timurkash/go-test-task
 
 go 1.24.1
 

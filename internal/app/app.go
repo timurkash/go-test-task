@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/timurkash/queue2/internal/biz"
-	"github.com/timurkash/queue2/internal/handler"
+	"github.com/timurkash/go-test-task/internal/biz"
+	"github.com/timurkash/go-test-task/internal/handler"
 )
 
 type Application struct {

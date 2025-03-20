@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/joho/godotenv"
 	"github.com/steinfletcher/apitest"
-	"github.com/timurkash/queue2/internal/biz"
-	"github.com/timurkash/queue2/internal/handler"
+	"github.com/timurkash/go-test-task/internal/biz"
+	"github.com/timurkash/go-test-task/internal/handler"
 	"net/http"
 	"os"
 	"strconv"
@@ -20,9 +20,7 @@ var (
 )
 
 func TestMain(m *testing.M) {
-	//_ = godotenv.Load(".env.test")
 	configMap, _ := godotenv.Read(".env.test")
-
 	queue = configMap["QUEUE_NAME"]
 	maxQueues, _ := strconv.Atoi(configMap["MAX_QUEUES"])
 	queueCap, _ = strconv.Atoi(configMap["QUEUE_CAPACITY"])
